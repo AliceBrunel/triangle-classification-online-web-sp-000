@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind 
-    array 
+    array(side_1,side_2,side_3)
     @type = 
   end
   
