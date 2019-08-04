@@ -10,7 +10,7 @@ class Triangle
 
   def kind     
     array = Array([side_1,side_2,side_3])
-    if array.find {|i| i == 0}
+    if array.find {|i| i <= 0}
       begin
         raise TriangleError
       rescue TriangleError => error
