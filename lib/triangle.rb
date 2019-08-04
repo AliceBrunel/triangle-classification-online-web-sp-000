@@ -30,7 +30,7 @@ class Triangle
     elsif compare.count(3) == 3
     :equilateral
     elsif compare.count(0) == 0
-    :scolene
+    :scalene
     end
   end
   
