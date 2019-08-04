@@ -8,9 +8,26 @@ class Triangle
     @side_3 = side_3
   end
 
-  def kind 
-    array(side_1,side_2,side_3)
-    @type = 
+  def kind     
+    array = Array([side_1,side_2,side_3])
+    if array.find {|i| i == 0}
+      "Not a triangle"
+    else 
+    triangle_type
+    end
+
+  end
+
+  def triangle_type
+    array = Array([side_1,side_2,side_3])
+    compare = array.map {|side| array.count(side) }
+    if compare.count(2) == 2
+    :isocele
+    elsif compare.count(3) == 3
+    :equilateral
+    elsif compare.count(0) == 0
+    :scolene
+    end
   end
   
     class TriangleError < StandardError
