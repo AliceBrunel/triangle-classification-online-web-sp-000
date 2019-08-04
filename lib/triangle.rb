@@ -13,8 +13,8 @@ class Triangle
     if array.find {|i| i <= 0}
       begin
         raise TriangleError
-      rescue TriangleError => error
-          puts error.message
+      #rescue TriangleError => error
+      #    puts error.message
       end
     else 
     triangle_type
