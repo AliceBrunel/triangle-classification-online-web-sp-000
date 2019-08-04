@@ -17,9 +17,8 @@ class Triangle
           puts error.message
       end
     else 
-    triangle_type
+    #triangle_type
     end
-
   end
 
   def triangle_type
