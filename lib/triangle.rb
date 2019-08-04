@@ -9,6 +9,7 @@ class Triangle
   end
 
   def kind 
+    array 
     @type = 
   end
   
