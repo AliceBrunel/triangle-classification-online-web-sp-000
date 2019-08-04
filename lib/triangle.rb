@@ -16,6 +16,9 @@ class Triangle
       #rescue TriangleError => error
       #    puts error.message
       end
+    elsif 
+    elsif
+    elsif
     else 
     triangle_type
     end
